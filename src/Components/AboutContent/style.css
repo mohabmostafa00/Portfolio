@@ -1,0 +1,70 @@
+
+.about-section {
+  position: relative ;
+  padding-top: 150px ;
+  padding-bottom: 30px ;
+  /* background-image: var(--section-background-color) !important; */
+  color: white ;
+}
+
+.tech-icons {
+  display: flex ;
+  align-self: center ;
+  justify-content: center ;
+  font-size: 1rem ;
+  margin: 15px ;
+  padding: 10px 20px ;
+  opacity: 0.93 ;
+  outline: 1.7px solid rgba(200, 137, 230, 0.637) ;
+  vertical-align: middle ;
+  text-align: center ;
+  border-radius: 24px ;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) ;
+  overflow: hidden ;
+  transition: all 0.4s ease 0s ;
+  width: fit-content ;
+  cursor: pointer ;
+  transition: outline-color 0.3s, outline-width 0.3s, transform 0.3s;
+  color: white;
+}
+
+.tech-icons-text {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px ;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) ;
+  overflow: hidden ;
+  outline: 2.2px solid rgba(197, 115, 230, 0.883) ;
+}
+.tech-icon-images {
+  height: 1.6rem;
+  line-height: 1.6 ;
+}
+
+.quote-card-view {
+  border: none ;
+  color: white ;
+  background-color: transparent ;
+}
+
+.about-activity {
+  list-style: none ;
+  text-align: left ;
+  padding-left: 1px ;
+}
+
+@media (max-width: 767px) {
+  .about-img {
+    padding-top: 0 ;
+  }
+}
