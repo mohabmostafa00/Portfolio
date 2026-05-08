@@ -1,9 +1,8 @@
-import React from "react";
-import "./style.css"
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import "./style.css";
 
 function ProjectCard(props) {
   return (
@@ -20,8 +19,6 @@ function ProjectCard(props) {
         </Button>
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
         {!props.isBlog && props.demoLink && (
           <Button

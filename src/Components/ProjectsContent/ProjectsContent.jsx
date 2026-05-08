@@ -1,12 +1,8 @@
-import "./style.css"
+import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle/Particle";
 import ProjectCard from "./ProjectCard";
-import leaf from "../../assets/blog.png"
-// import editor from "../../Assets/Projects/codeEditor.png";
-// import chatify from "../../Assets/Projects/chatify.png";
-// import suicide from "../../Assets/Projects/suicide.png";
-// import bitsOfCode from "../../Assets/Projects/blog.png";
+import leaf from "../../assets/blog.png";
 
 function ProjectsContent() {
   return (
@@ -20,8 +16,6 @@ function ProjectsContent() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
@@ -32,8 +26,6 @@ function ProjectsContent() {
               demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
-
-
         </Row>
       </Container>
     </Container>

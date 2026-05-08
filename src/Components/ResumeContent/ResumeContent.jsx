@@ -1,5 +1,5 @@
-import "./style.css"
-import { useState , useEffect} from "react";
+import "./style.css";
+import { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle/Particle";
 import pdf from "../../assets/Soumyajit_Behera-BIT_MESRA.pdf";
@@ -10,27 +10,23 @@ import "react-pdf/dist/Page/TextLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
+  import.meta.url,
 ).toString();
 
 function ResumeContent() {
-  const [width, setWidth] = useState(1200);
+  const [size, setSize] = useState(1200);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    setSize(window.innerWidth);
   }, []);
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        
+
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <button
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
+          <button href={pdf} target="_blank" style={{ maxWidth: "250px" }}>
             <AiOutlineDownload />
             &nbsp;Download CV
           </button>
@@ -38,22 +34,16 @@ function ResumeContent() {
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={size > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <button
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
+          <button href={pdf} target="_blank" style={{ maxWidth: "250px" }}>
             <AiOutlineDownload />
             &nbsp;Download CV
           </button>
         </Row>
-
-
       </Container>
     </div>
   );
