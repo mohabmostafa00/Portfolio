@@ -2,7 +2,9 @@ import { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/Logoo.png";
+import Logo from "./logo";
+
 import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
@@ -33,8 +35,8 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+        <Navbar.Brand href="/" className="d-flex Nav-logo">
+            <Logo />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

@@ -2,12 +2,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle/Particle";
 import { ImPointRight } from "react-icons/im";
 import laptopImg from "../../assets/about.png";
-import ASkills from "./AboutSkills";
-import "./style.css"
-// import Github from "./Github";
-// import Techstack from "./Techstack";
-// import Aboutcard from "./AboutCard";
-// import Toolstack from "./Toolstack";
+import Skills from "./Skills";
+import "./style.css";
+
 
 function AboutContent() {
   return (
@@ -25,22 +22,28 @@ function AboutContent() {
                 paddingBottom: "50px",
               }}
             >
-              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Know Who <strong className="purple">I'M</strong>
+              <h1
+                style={{
+                  fontSize: "2.1em",
+                  paddingBottom: "20px",
+                  color: "white",
+                }}
+              >
+                Know Who <strong className="Sky-Blue">I'M</strong>
               </h1>
               <div className="blockquote mb-0">
                 <p style={{ textAlign: "justify" }}>
                   Hi everyone! I’m{" "}
-                  <span className="purple">Soumyajit Behera</span> from{" "}
-                  <span className="purple">Bhubaneswar, India</span>.
+                  <span className="Sky-Blue">Soumyajit Behera</span> from{" "}
+                  <span className="Sky-Blue">Bhubaneswar, India</span>.
                   <br />
                   I’m currently working as a{" "}
-                  <span className="purple">Software Developer</span> at{" "}
-                  <span className="purple">Juspay</span>.
+                  <span className="Sky-Blue">Software Developer</span> at{" "}
+                  <span className="Sky-Blue">Juspay</span>.
                   <br />I hold an Integrated M.Sc. (IMSc) in{" "}
-                  <span className="purple">
+                  <span className="Sky-Blue">
                     Mathematics and Computing
-                  </span> from <span className="purple">BIT Mesra</span>.
+                  </span> from <span className="Sky-Blue">BIT Mesra</span>.
                   <br />
                   <br />
                   Outside of coding, I love engaging in activities that keep me
@@ -58,11 +61,10 @@ function AboutContent() {
                   </li>
                 </ul>
 
-                <p style={{ color: "rgb(155 126 172)" }}>
+                <p style={{ color: "#00EEFF" }}>
                   "Strive to build things that make a difference!"{" "}
                 </p>
               </div>
-
             </Col>
 
             <Col
@@ -73,19 +75,9 @@ function AboutContent() {
               <img src={laptopImg} alt="about" className="img-fluid" />
             </Col>
           </Row>
-          <h1 className="project-heading">
-            Professional <strong className="purple">Skillset </strong>
-          </h1>
+          <h1 className="project-heading">Professional Skillset</h1>
 
-          {/* <Techstack /> */}
-              <ASkills/>
-
-          <h1 className="project-heading">
-            <strong className="purple">Tools</strong> I use
-          </h1>
-          {/* <Toolstack /> */}
-
-          {/* <Github /> */}
+          <Skills />
         </Container>
       </Container>
     </>

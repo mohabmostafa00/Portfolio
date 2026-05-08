@@ -11,12 +11,12 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <Container fluid className="footer-container">
       <Row>
-        <Col md="4" className="footer-copywright">
+        <Col md="4" className="footer-text">
           <h3>Designed and Developed by Soumyajit Behera</h3>
         </Col>
-        <Col md="4" className="footer-copywright">
+        <Col md="4" className="footer-text">
           <h3>Copyright © {year} SB</h3>
         </Col>
         <Col md="4" className="footer-body">

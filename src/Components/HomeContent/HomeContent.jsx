@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../assets/home-main.svg";
-import Particle from "../../Components/Particle/Particle";
+import homeLogo from "../../assets/home-main.png";
+import Particle from "../Particle/Particle";
 import Type from "./Type";
 import {
   AiFillGithub,
@@ -8,9 +8,9 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../assets/bob.svg";
 import Tilt from "react-parallax-tilt";
-import "./style.css"
+import "./style.css";
 function HomeContent() {
   return (
     <section>
@@ -51,8 +51,8 @@ function HomeContent() {
         <Container>
           <Row>
             <Col md={8} className="home-about-description">
-              <h1 style={{ fontSize: "2.6em" }}>
-                LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              <h1 style={{ fontSize: "2.6em" }} className="home-about-title">
+                LET ME <span className="Sky-Blue"> INTRODUCE </span> MYSELF
               </h1>
               <p className="home-about-body">
                 I’m a Software Engineer who loves transforming ideas into
@@ -63,7 +63,7 @@ function HomeContent() {
                 <br />
                 I’m proficient in
                 <i>
-                  <b className="purple">
+                  <b className="Sky-Blue">
                     {" "}
                     JavaScript, C++, Rust, Node.js, and Java{" "}
                   </b>
@@ -73,7 +73,7 @@ function HomeContent() {
                 <br />
                 My key areas of interest include developing
                 <i>
-                  <b className="purple">
+                  <b className="Sky-Blue">
                     {" "}
                     Web Applications, Blockchain Solutions,{" "}
                   </b>
@@ -82,14 +82,14 @@ function HomeContent() {
                 <br />
                 <br />
                 Whenever possible, I love building projects with
-                <b className="purple"> Node.js </b> and modern frameworks like{" "}
+                <b className="Sky-Blue"> Node.js </b> and modern frameworks like{" "}
                 <i>
-                  <b className="purple">React.js</b> and{" "}
-                  <b className="purple">Next.js</b>.
+                  <b className="Sky-Blue">React.js</b> and{" "}
+                  <b className="Sky-Blue">Next.js</b>.
                 </i>
               </p>
             </Col>
-            <Col md={4} className="myAvtar">
+            <Col md={4} className="myAvatar">
               <Tilt>
                 <img src={myImg} className="img-fluid" alt="avatar" />
               </Tilt>
@@ -102,7 +102,7 @@ function HomeContent() {
           <Col md={12} className="home-about-social">
             <h1>Find Me On</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="Sky-Blue">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
