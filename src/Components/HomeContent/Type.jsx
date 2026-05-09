@@ -1,9 +1,8 @@
 import Typewriter from "typewriter-effect";
-import "./style.css"
+import "./style.css";
 function Type() {
   return (
     <Typewriter
-    
       options={{
         strings: [
           "Software Developer",

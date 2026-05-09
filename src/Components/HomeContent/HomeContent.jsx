@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../assets/home-main.png";
+import homeLogo from "../../assets/Home-img.svg";
 import Particle from "../Particle/Particle";
 import Type from "./Type";
 import {
@@ -11,27 +11,29 @@ import { FaLinkedinIn } from "react-icons/fa";
 import myImg from "../../assets/bob.svg";
 import Tilt from "react-parallax-tilt";
 import "./style.css";
+import Animations from "../Animations/Animations";
 function HomeContent() {
   return (
     <section>
+      <Animations />
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 15 }} className="heading reveal from-left">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 className="heading-name reveal from-left">
                 I'M
                 <strong className="main-name"> Mohab Mostafa</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div className="reveal from-bottom" style={{ padding: 30 }}>
                 <Type />
               </div>
             </Col>
@@ -40,7 +42,7 @@ function HomeContent() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-home reveal from-right"
                 style={{ maxHeight: "450px" }}
               />
             </Col>
@@ -51,10 +53,10 @@ function HomeContent() {
         <Container>
           <Row>
             <Col md={8} className="home-about-description">
-              <h1 style={{ fontSize: "2.6em" }} className="home-about-title">
-                LET ME <span className="Sky-Blue"> INTRODUCE </span> MYSELF
+              <h1 style={{ fontSize: "2.6em" }} className="home-about-title reveal from-bottom">
+                LET ME INTRODUCE<span className="Sky-Blue"> MYSELF </span>
               </h1>
-              <p className="home-about-body">
+              <p className="home-about-body reveal from-left">
                 I’m a Software Engineer who loves transforming ideas into
                 reliable, scalable products. Over time, I’ve explored several
                 technologies and found my passion in building high-performance
@@ -91,7 +93,7 @@ function HomeContent() {
             </Col>
             <Col md={4} className="myAvatar">
               <Tilt>
-                <img src={myImg} className="img-fluid" alt="avatar" />
+                <img src={myImg} className="img-fluid reveal from-right" alt="avatar" />
               </Tilt>
             </Col>
           </Row>
@@ -99,7 +101,7 @@ function HomeContent() {
       </Container>
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
-          <Col md={12} className="home-about-social">
+          <Col md={12} className="home-about-social reveal from-bottom">
             <h1>Find Me On</h1>
             <p>
               Feel free to <span className="Sky-Blue">connect </span>with me
@@ -107,10 +109,10 @@ function HomeContent() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/mohabmostafa00"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-color  home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -120,17 +122,17 @@ function HomeContent() {
                   href="https://twitter.com/Soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-color  home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/mohab-mostafa-169780380/?skipRedirect=true"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-color  home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -140,7 +142,7 @@ function HomeContent() {
                   href="https://www.instagram.com/soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                  className="icon-color home-social-icons"
                 >
                   <AiFillInstagram />
                 </a>

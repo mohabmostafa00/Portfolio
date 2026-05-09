@@ -6,7 +6,14 @@
   color: var(--text-color);
 }
 .about-section .Sky-Blue{
-  color : #00EEFF;
+  background: linear-gradient(90deg, #00EEFF 40%, #6c63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-section .p-sky {
+    background: linear-gradient(90deg, #00EEFF 40%, #6c63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about-activity {
   list-style: none ;
@@ -43,11 +50,18 @@
   align-items: center;
   margin-left: 10px;
   color: white;
+  padding: auto 50px;
 }
 .skills-icons:hover {
   transform: scale(1.05) ;
   overflow: hidden ;
-  outline: 2.2px solid #00EEFF
+  outline: 2.2px solid #00EEFF;
+    box-shadow:
+    0 0 10px #6c63ff,
+    0 0 20px #00EEFF;
+      background: linear-gradient(90deg, #00EEFF 40%, #6c63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .skills-icons-images {
   height: 1.6rem;

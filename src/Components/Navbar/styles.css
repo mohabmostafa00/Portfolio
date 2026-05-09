@@ -9,6 +9,17 @@
   transition: all 0.3s ease-out 0s;
   padding: 0.3rem 2rem;
   font-size: 1.2rem;
+  animation: fadeDown 0.6s ease;
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .navbar{
   background: rgba(5, 8, 22, 0.6);
@@ -87,7 +98,7 @@
 }
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 .navbar-nav .nav-item a {
   font-weight: 400;
@@ -106,8 +117,8 @@
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #00EEFF;
-  bottom: 1px;
+  background: linear-gradient(135deg, #00EEFF 40%, #6c63ff );
+  bottom: -3px;
   left: 0;
   z-index: -1;
   transition: all 0.3s ease-out 0s;

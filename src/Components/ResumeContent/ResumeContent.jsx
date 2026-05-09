@@ -2,7 +2,7 @@ import "./style.css";
 import { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle/Particle";
-import pdf from "../../assets/Soumyajit_Behera-BIT_MESRA.pdf";
+import pdf from "../../assets/CV3.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";

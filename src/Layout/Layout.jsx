@@ -10,20 +10,22 @@ import "./style.css";
 function Layout() {
   return (
     <BrowserRouter>
+      {" "}
       <div className="layout">
-        <Navbar />
-
+        {" "}
+        <Navbar />{" "}
         <main className="main-content">
+          {" "}
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-        </main>
-
-        <Footer />
-      </div>
+            {" "}
+            <Route path="/" element={<Home />} />{" "}
+            <Route path="/project" element={<Projects />} />{" "}
+            <Route path="/about" element={<About />} />{" "}
+            <Route path="/resume" element={<Resume />} />{" "}
+          </Routes>{" "}
+        </main>{" "}
+        <Footer />{" "}
+      </div>{" "}
     </BrowserRouter>
   );
 }
