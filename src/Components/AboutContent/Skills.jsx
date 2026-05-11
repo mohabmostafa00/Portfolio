@@ -9,13 +9,7 @@ import "./style.css";
 
 function ASkills() {
   return (
-    <Row
-      style={{
-        justifyContent: "center",
-        paddingBottom: "50px",
-        paddingTop: "30px",
-      }}
-    >
+    <Row>
       <Col xs={4} md={2} className="skills-icons">
         <img src={Javascript} alt="javascript" />
         <div className="skills-icons-text">Javascript</div>

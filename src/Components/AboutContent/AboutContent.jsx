@@ -14,28 +14,13 @@ function AboutContent() {
       <Particle />
       <Container fluid className="about-section">
         <Container>
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
-            <Col
-              md={7}
-              className="reveal from-left"
-              style={{
-                justifyContent: "center",
-                paddingTop: "30px",
-                paddingBottom: "50px",
-              }}
-            >
-              <h1
-                style={{
-                  fontSize: "2.1em",
-                  paddingBottom: "20px",
-                  color: "white",
-                }}
-              >
+          <Row className="about-row">
+            <Col md={7} className="about-text reveal from-left">
+              <h1 className="about-title">
                 Know Who <strong className="Sky-Blue">I'M</strong>
               </h1>
-
-              <div className="blockquote mb-0">
-                <p style={{ textAlign: "justify" }}>
+              <div className="about-description">
+                <p className="about-paragraph">
                   Hi everyone! I’m{" "}
                   <span className="Sky-Blue">Mohab Mostafa</span>, a Software
                   Engineer passionate about building fast, scalable, and modern
@@ -53,45 +38,35 @@ function AboutContent() {
                   <span className="Sky-Blue">React</span>,{" "}
                   <span className="Sky-Blue">Node.js</span>, and system design.
                 </p>
-
-                <ul>
+                <ul className="about-list">
                   <li className="about-activity reveal from-left">
                     <ImPointRight /> Exploring new technologies ⚡
                   </li>
-
                   <li className="about-activity reveal from-left">
                     <ImPointRight /> Building side projects 💡
                   </li>
-
                   <li className="about-activity reveal from-left">
                     <ImPointRight /> Learning system design 🧠
                   </li>
-
                   <li className="about-activity reveal from-left">
                     <ImPointRight /> Gaming & creativity 🎮
                   </li>
                 </ul>
-
-                <p className="p-sky reveal from-bottom">
+                <p className="p-sky reveal from-left about-quote">
                   "Build with purpose. Improve with every line of code."
                 </p>
               </div>
             </Col>
-
-            <Col
-              md={5}
-              className="about-img reveal from-right"
-              style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            >
-              <img src={laptopImg} alt="about" className="img-fluid" />
+            <Col md={5} className="about-img reveal from-right">
+              <div className="about-img-wrapper">
+                <img src={laptopImg} alt="about" />
+              </div>
             </Col>
           </Row>
-
-          <h1 className="project-heading reveal from-bottom">
+          <h1 className="project-heading about-skills-title reveal from-bottom">
             Professional Skills
           </h1>
-
-          <div className="reveal from-bottom">
+          <div className="about-skills reveal from-bottom">
             <Skills />
           </div>
         </Container>

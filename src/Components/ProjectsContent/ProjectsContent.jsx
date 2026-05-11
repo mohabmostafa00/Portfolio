@@ -2,21 +2,30 @@ import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle/Particle";
 import ProjectCard from "./ProjectCard";
-import leaf from "../../assets/blog.png";
+import leaf from "../../assets/project-5.jpg";
+import Animations from "../Animations/Animations";
 
 function ProjectsContent() {
   return (
     <Container fluid className="project-section">
       <Particle />
+      <Animations/>
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+        <h1 className="project-heading reveal from-left">
+          My Recent <strong className="Sky-Blue">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <p className="reveal from-right">Here are a few projects I've worked on recently.</p>
+        <Row>
+          <Col md={6} className="project-card reveal from-bottom delay-1">
+            <ProjectCard
+              imgPath={leaf}
+              isBlog={false}
+              title="E-commerce"
+              description="Built a responsive e-commerce web application using React,HTML,CSS,and JavaScript"
+              demoLink="https://plant49-ai.herokuapp.com/"
+            />
+          </Col>
+          <Col md={6} className="project-card reveal from-bottom delay-1">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
