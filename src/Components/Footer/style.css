@@ -1,8 +1,9 @@
 .footer-container {
   background: rgba(5, 8, 22, 0.6);
-  bottom: 0 ;
-  padding-top: 10px ;
-  padding-bottom: 8px  ;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  z-index: -99;
 }
 .footer-text {
   text-align: center ;
