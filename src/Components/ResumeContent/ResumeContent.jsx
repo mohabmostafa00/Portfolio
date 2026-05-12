@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle/Particle";
-import pdf from "../../assets/CV.pdf";
+import pdf from "../../assets/Resume/CV.pdf";
 import { AiOutlineDownload, AiOutlineCode } from "react-icons/ai";
 import { HiOutlineEye, HiOutlineX } from "react-icons/hi";
 import { FaReact, FaLaptopCode, FaProjectDiagram } from "react-icons/fa";

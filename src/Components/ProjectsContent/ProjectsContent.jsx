@@ -2,7 +2,7 @@ import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle/Particle";
 import ProjectCard from "./ProjectCard";
-import leaf from "../../assets/project-5.jpg";
+import leaf from "../../assets/project/project-img.jpg";
 import Animations from "../Animations/Animations";
 
 function ProjectsContent() {
@@ -16,7 +16,7 @@ function ProjectsContent() {
         </h1>
         <p className="reveal from-right">Here are a few projects I've worked on recently.</p>
         <Row>
-          <Col md={6} className="project-card reveal from-bottom delay-1">
+          <Col md={6} className="project-card reveal from-bottom ">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -25,7 +25,7 @@ function ProjectsContent() {
               demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
-          <Col md={6} className="project-card reveal from-bottom delay-1">
+          <Col md={6} className="project-card reveal from-bottom">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}

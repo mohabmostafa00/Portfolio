@@ -1,10 +1,10 @@
 import { Col, Row } from "react-bootstrap";
 import { SiNextdotjs } from "react-icons/si";
-import Javascript from "../../assets/Javascript.svg";
-import Node from "../../assets/Node.svg";
-import Git from "../../assets/Git.svg";
-import Redux from "../../assets/Redux.svg";
-import React from "../../assets/React.svg";
+import Javascript from "../../assets/about/Javascript.svg";
+import Node from "../../assets/about/Node.svg";
+import Git from "../../assets/about/Git.svg";
+import Redux from "../../assets/about/Redux.svg";
+import React from "../../assets/about/React.svg";
 import "./style.css";
 
 function ASkills() {

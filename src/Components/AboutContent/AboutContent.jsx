@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle/Particle";
 import { ImPointRight } from "react-icons/im";
-import laptopImg from "../../assets/about 3.svg";
+import laptopImg from "../../assets/about/about-img.svg";
 import Skills from "./Skills";
 import "./style.css";
 import Animations from "../Animations/Animations";

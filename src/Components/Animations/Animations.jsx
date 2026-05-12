@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import "./style.css"
 function Animations() {
   useEffect(() => {
     const elements = document.querySelectorAll(".reveal");

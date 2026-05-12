@@ -1,3 +1,4 @@
+/* ======================= home-section ======================= */
 .home-section {
   position: relative;
   z-index: -1 ;
@@ -13,28 +14,32 @@
   padding-top: 80px ;
   color: white;
 }
-.heading {
-  font-size: 2.4em ;
-  padding-left: 50px ;
+.home-header .heading {
+  font-size: 40px;
+  font-weight: bold;
 }
-.heading-name {
-  font-size: 40px ;
-  padding-left: 45px ;
+.home-header .heading-name {
+  font-size: 50px;
+  font-weight: bold;
 }
-.main-name {
+.home-header .main-name {
+  font-size: 45px;
+  font-weight: bold;
   color: #00EEFF;
   background: linear-gradient(90deg, #00EEFF 60%, #6c63ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Typewriter__wrapper {
-  margin-left: 15px;
-  font-size: 40px ;
+.home-header .Typewriter__wrapper {
+  font-size: 45px ;
   color: #00EEFF;
   background: linear-gradient(90deg, #00EEFF 60%, #6c63ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
+}
+.home-header .type {
+  padding-top: 10px;
 }
 .wave {
   animation-name: wave-animation; 
@@ -50,6 +55,9 @@
   width: 100%;
   height: 100%;
 }
+
+/* ============ Animation ============ */
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -77,86 +85,138 @@
   }
 }
 
-/* ========== Responsive ========== */
+/* ============ Responsive ============ */
 
 @media (max-width: 992px) {
-  .home-content {
-    padding: 11rem 0 3rem;
-    text-align: center;
+  .home-section .home-content {
+    padding: 12rem 0 3rem;
+    text-align: left;
   }
-  .home-header {
+  .home-content .home-header {
     padding-top: 40px;
   }
-  .heading {
-    font-size: 2rem;
-    padding-left: 3px;
+  .home-header .heading {
+    font-size: 35px;
   }
-  .heading-name {
-    font-size: 34px;
-    padding-left: 0;
-    margin-top: 10px;
+  .home-header .heading-name {
+    font-size: 40px;
   }
-  .Typewriter__wrapper {
-    font-size: 28px;
+  .home-header .Typewriter__wrapper {
+    font-size: 35px;
+    line-height: 2.5;
   }
-  .img-home{
+  .home-content .img-home{
     width: 100%;
-    padding-top: 10px;
   }
-  .wave{
+  .home-header .wave{
     width: 25px;
   }
 }
 
 @media (max-width: 768px) {
-  .home-section {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .home-section .home-content {
+    padding: 1.3rem 0 3rem;
+    text-align: center;
   }
-  .home-content {
-    padding: 5rem 0 1rem;
+  .home-header .heading {
+    font-size: 35px;
+    text-align: center;
   }
-  .home-header {
-    padding-top: 20px;
+  .home-header .heading-name {
+    font-size: 40px;
+    text-align: center;
   }
-  .heading {
-    font-size: 2rem;
+  .home-header .main-name {
+    font-size: 35px;
+    text-align: center;
   }
-  .heading-name {
-    line-height: 1.4;
+  .home-header .type  {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 10px;
   }
-  .Typewriter__wrapper {
-    font-size: 30px;
-  }
-  .wave{
+  .home-header .Typewriter__wrapper {
+    font-size: 35px;
+  } 
+  .home-header .wave {
     width: 25px;
+  }
+  .home-content .img-home{
+    width: 75%;
+    padding: 0 20px;
   }
 }
 
 @media (max-width: 576px) {
-  .home-content {
-    padding: 4rem 10px 1rem;
+  .home-header {
+    padding-bottom: 30px;
+  }
+  .home-header .heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .home-header .heading-name {
+    font-size: 35px;
+    text-align: center;
+  }
+  .home-header .main-name {
+    font-size: 32px;
+    text-align: center;
+  }
+  .home-header .type  {
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+  .home-header .Typewriter__wrapper {
+    font-size: 32px;
+  } 
+  .home-header .wave {
+    width: 20px;
+  }
+  .home-content .img-home{
+    width: 100%;
+    padding: 0 30px;
+  }
+}
 
+@media (max-width: 400px) {
+  .home-section .home-content {
+    padding-top: 40px ;
   }
-  .heading {
-    font-size: 1.6rem;
+  .home-header {
+    padding-bottom: 40px;
   }
-  .heading-name {
+  .home-header .heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .home-header .heading-name {
     font-size: 28px;
+    text-align: center;
   }
-  .Typewriter__wrapper {
-    font-size: 23px;
+  .home-header .main-name {
+    font-size: 28px;
+    text-align: center;
   }
-  .wave {
-    width: 30px;
+  .home-header .type  {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 10px;
   }
-  .img-home{
+  .home-header .Typewriter__wrapper {
+    font-size: 25px;
+  } 
+  .home-header .wave {
+    width: 20px;
+  }
+  .home-content .img-home{
     width: 100%;
     padding: 0 20px;
   }
 }
 
-/* ================================= */
+/* ===================== home-about-section ===================== */
 
 .home-about-section {
   position: relative;
@@ -175,6 +235,10 @@
   padding-bottom: 20px ;
   text-align: center;
 }
+.home-about-description .home-about-title{
+  font-weight: bold;
+  padding-bottom: 20px;
+}
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em ;
@@ -189,17 +253,18 @@
   padding-left: 6em;
 }
 
-/* ======= Responsive ======= */
+/* ============ Responsive ============ */
 
 @media (max-width: 992px) {
   .home-about-section {
-    padding-top: 60px;
+    padding-top: 60px ;
     padding-bottom: 60px;
     text-align: left;
   }
   .home-about-body {
-    font-size: 1.05rem;
-    line-height: 1.9;
+    font-size: 17px;
+    line-height: 1.7;
+    padding-top: 25px;
   }
   .myAvatar {
     padding-top: 6.5rem;
@@ -218,13 +283,15 @@
     padding-bottom: 50px;
   }
   .home-about-description {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 10px;
+  }.home-about-description .home-about-title {
+    padding-bottom: 40px;
   }
   .home-about-body {
     font-size: 1rem;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.9;
     padding: 0 10px;
   }
   .myAvatar {
@@ -246,7 +313,7 @@
   }
   .home-about-body {
     font-size: 0.95rem;
-    line-height: 1.7;
+    line-height: 1.8;
   }
   .myAvatar img {
     width: 100%;
@@ -254,7 +321,31 @@
   }
 }
 
-/* ================================= */
+@media (max-width: 400px) {
+  .home-about-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .home-about-description {
+    padding-top: 20px;
+  }
+  .home-about-description .home-about-title {
+    font-size: 22px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .home-about-body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .myAvatar img {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+/* ===================== home-about-social ===================== */
 
 .home-about-social {
   text-align: center ;
@@ -314,7 +405,7 @@
     0 0 15px #00eeff93;
 }
 
-/* ======= Responsive ======= */
+/* ============ Responsive ============ */
 
 @media (max-width: 992px) {
   .home-about-social {
@@ -365,32 +456,4 @@
   }
 }
 
-
-
-
-/* ===== Base hidden state ===== */
-.reveal {
-  opacity: 0;
-  transition: all 0.9s ease;
-  will-change: transform, opacity;
-}
-
-/* ===== directions ===== */
-.from-left {
-  transform: translateX(-100px);
-}
-
-.from-right {
-  transform: translateX(100px);
-}
-
-.from-bottom {
-  transform: translateY(100px);
-}
-
-/* ===== active state ===== */
-.reveal.active {
-  opacity: 1;
-  transform: translate(0);
-}
 

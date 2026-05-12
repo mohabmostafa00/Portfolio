@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../assets/Home-img.svg";
+import homeLogo from "../../assets/home/Home-img.svg";
 import Particle from "../Particle/Particle";
 import Type from "./Type";
 import {
@@ -8,7 +8,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import myImg from "../../assets/bob.svg";
+import myImg from "../../assets/home/Avatar.svg";
 import Tilt from "react-parallax-tilt";
 import "./style.css";
 import Animations from "../Animations/Animations";
@@ -27,17 +27,14 @@ function HomeContent() {
                   👋🏻
                 </span>
               </h1>
-
               <h1 className="heading-name reveal from-left">
                 I'M
                 <strong className="main-name"> Mohab Mostafa</strong>
               </h1>
-
-              <div className="reveal from-bottom" style={{ padding: 30 }}>
+              <div className="type reveal from-bottom">
                 <Type />
               </div>
             </Col>
-
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
@@ -53,7 +50,7 @@ function HomeContent() {
         <Container>
           <Row>
             <Col md={8} className="home-about-description">
-              <h1 style={{ fontSize: "2.6em" }} className="home-about-title reveal from-bottom">
+              <h1  className="home-about-title reveal from-bottom">
                 LET ME INTRODUCE<span className="Sky-Blue"> MYSELF </span>
               </h1>
               <p className="home-about-body reveal from-left">

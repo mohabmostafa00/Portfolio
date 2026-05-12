@@ -1,3 +1,4 @@
+/* ==================== project-section ==================== */
 .project-section {
   position: relative;
   padding-top: 100px;
@@ -30,7 +31,7 @@
   text-align: center;
 }
 .project-container .project-card-content {
-  width: 90%;
+  width: 85%;
   background: rgba(17, 25, 40, 0.75) ;
   border: 1px solid rgba(255, 255, 255, 0.08) ;
   backdrop-filter: blur(12px);
@@ -69,7 +70,7 @@
   z-index: -1;
 }
 .project-card-content img {
-  height: 230px;
+  height: 220px;
   object-fit: cover;
   border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: 0.4s;
@@ -114,15 +115,7 @@
   font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-
+/* =============== Responsive =============== */
 
 @media (max-width: 1200px) {
   .project-section {
@@ -193,9 +186,6 @@
   }
 }
 
-
-/* ========== 768px ========== */
-
 @media (max-width: 768px) {
   .project-section {
     padding-top: 80px;
@@ -239,9 +229,6 @@
   }
 }
 
-
-/* ========== 576px ========== */
-
 @media (max-width: 576px) {
   .project-section {
     padding-top: 60px;
@@ -279,9 +266,6 @@
     width: 80%;
   }
 }
-
-
-/* ========== 400px ========== */
 
 @media (max-width: 400px) {
   .project-heading {

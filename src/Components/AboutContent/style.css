@@ -38,7 +38,7 @@
 .about-activity:hover {
   transform: translateX(10px);
 }
-.about-activity:hover * {
+.about-activity:hover {
   color: #00EEFF;
 }
 .about-quote {
@@ -62,7 +62,6 @@
 .about-img-wrapper img:hover {
   transform: scale(1.05);
 }
-
 
 @keyframes float {
   0% { transform: translateY(0); }
@@ -114,9 +113,12 @@
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 992px) {
+  .about-section {
+    padding-top: 80px !important;
+  }
   .about-description .about-paragraph {
     font-size: 16px ;
-    line-height: 1.5;
+    line-height: 1.4;
   }
   .about-list {
     display: flex;
@@ -124,7 +126,7 @@
     align-items: start;
   }
   .about-list .about-activity{
-    padding: 5px;
+    padding: 3px;
   }
   .about-text .about-description .p-sky{
     margin-top: -20px;
@@ -195,6 +197,7 @@
     font-size: 0.9rem;
     line-height: 1.65;
     text-align: center;
+    padding: 0 15px;
   }
   .about-list .about-activity {
     font-size: 1rem;
@@ -229,13 +232,13 @@
     text-align: center;
   }
   .about-description .about-list{
-    text-align: left;
-    padding: 0 ;
+    list-style: none;
+    text-align: center;
   }
   .about-list .about-activity {
     font-size: 13px;
-    padding: 0 23px;
-    text-align:center;
+    padding: 10px 23px;
+    text-align:left;
   }
   .about-row{
     display: flex;
@@ -255,180 +258,7 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-/* .about-section {
-  position: relative ;
-  padding-top: 120px  !important;
-  padding-bottom: 30px;
-  color: white ;
-  color: var(--text-color);
-}
-.about-section .Sky-Blue{
-  background: linear-gradient(90deg, #00EEFF 40%, #6c63ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.about-section .p-sky {
-  background: linear-gradient(90deg, #00EEFF 40%, #6c63ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-style: italic;
-  font-size: 20px;
-  margin-top: 25px;
-  letter-spacing: 1px;
-}
-.about-activity {
-  list-style: none ;
-  margin-bottom: 112px;
-  display: flex;
-  align-items: center;
-  font-size: 1.05rem;
-  transition: 0.3s ease;
-}
-.about-activity:hover {
-  transform: translateX(8px);
-  color: #00EEFF;
-}
-.about-img img {
-  animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-
-/* ======= Responsive ======= */
-
-/* @media (max-width: 992px) {
-  .about-section {
-    padding-top: 90px !important;
-    margin-top: 10px !important;
-    text-align: center;
-  }
-  .about-section p {
-    text-align: left;
-    font-size: 0.95rem !important;
-    margin-top: 15px !important;
-  }
-  .about-activity {
-    line-height: 1.2;
-  }
-  .about-section .p-sky {
-    line-height: 1.5;
-    margin-top: 5px !important;
-  }
-  .about-img {
-    margin-top: -15rem !important;
-  }
-  .about-img img {
-    max-width: 450px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-section {
-    padding-top: 90px !important;
-  }
-  .about-section h1 {
-    font-size: 1.9rem;
-    text-align: center;
-  }
-  .about-section p {
-    font-size: 1rem !important;
-  }
-  .about-activity {
-    font-size: 0.95rem;
-    line-height: 1.2;
-  }  
-  .about-section .p-sky {
-    font-size: 1rem !important;
-  }  
-  .about-img {
-    margin-top: -60px !important;
-  }
-  .about-img img {
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 576px) {
-  .about-section {
-    padding-top: 90px !important;
-    padding-inline: 10px;
-  }
-  .about-section h1 {
-    font-size: 1.9rem;
-    text-align: center;
-  }
-  .about-section p {
-    font-size: 0.9rem;
-    line-height: 1.7 !important;
-    text-align: center;
-  }
-  .about-section .p-sky {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-  }
-  .about-activity {
-    font-size: 1rem !important;
-    text-align: right;
-    line-height: 1.4;
-  }
-  .about-img {
-    margin-top: -50px !important;
-  }
-  .about-img img {
-    max-width: 240px;
-  }
-}
-
-@media (max-width: 400px) {
-  .about-section{
-    padding-top: 95px !important;
-  }
-  .about-section h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .about-section p {
-    font-size: 0.85rem !important;
-    text-align: left;
-  }
-  .about-section .p-sky {
-    line-height: 1.5;
-  }
-  .about-activity {
-    font-size: 0.85rem !important;
-    line-height: 1.2;
-  }
-  .about-img {
-    margin-top: -50px !important;
-  }
-  .about-img img {
-    max-width: 200px;
-  }
-}  */
-
-/* ================= ABOUT SECTION ================= */
+/* ==================== ABOUT SECTION ==================== */
 
 .about-section {
   position: relative;
@@ -437,75 +267,51 @@
   color: var(--text-color);
   overflow: hidden;
 }
-
-/* ===== Gradient Text ===== */
-
 .about-section .Sky-Blue,
 .about-section .p-sky {
   background: linear-gradient(90deg, #00EEFF 40%, #6c63ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* ===== Paragraph ===== */
-
 .about-section p {
   line-height: 1.9;
   font-size: 1.05rem;
 }
-
-/* ===== Quote ===== */
-
 .about-section .p-sky {
   font-style: italic;
   font-size: 1.1rem;
   margin-top: 25px;
   letter-spacing: 1px;
 }
-
-/* ===== Activities ===== */
-
 .about-activity {
   list-style: none;
   text-align: left;
   padding-left: 0;
   margin-bottom: 14px;
-
   display: flex;
   align-items: center;
   gap: 12px;
-
   font-size: 1.05rem;
   transition: 0.3s ease;
 }
-
 .about-activity:hover {
   transform: translateX(8px);
   color: #00EEFF;
 }
-
-/* ===== Image ===== */
-
 .about-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .about-img img {
   width: 100%;
   max-width: 430px;
-
   animation: float 4s ease-in-out infinite;
   transition: 0.4s ease;
 }
-
 .about-img img:hover {
   transform: scale(1.03);
 }
-
-/* ===== Floating Animation ===== */
-
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -515,15 +321,13 @@
     transform: translateY(-12px);
   }
 
-  100% {
+   100% {
     transform: translateY(0px);
   }
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================ skills-icons ================ */
 
-
-/* ================================= */
 
 .skills-icons {
   display: flex ;
@@ -573,5 +377,3 @@
   }
 }
 
-
- */
