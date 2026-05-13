@@ -114,11 +114,11 @@
 
 @media (max-width: 992px) {
   .about-section {
-    padding-top: 80px !important;
+    padding-top: 110px !important;
   }
   .about-description .about-paragraph {
     font-size: 16px ;
-    line-height: 1.4;
+    line-height: 1.5;
   }
   .about-list {
     display: flex;
@@ -126,10 +126,10 @@
     align-items: start;
   }
   .about-list .about-activity{
-    padding: 3px;
+    padding: 4px;
   }
   .about-text .about-description .p-sky{
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 16px;
     text-align: left;
     font-weight: bold;
@@ -140,7 +140,7 @@
     max-width: 500px;
   }
   .project-heading{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }  
   .about-skills-title {
     font-size: 40px;
@@ -169,7 +169,7 @@
     padding-top: 20px;
   }
   .about-img .about-img-wrapper img {
-    max-width: 350px;
+    max-width: 340px;
     padding-top: 30px; 
   }  
   .about-skills-title {
@@ -195,7 +195,7 @@
   }
   .about-description .about-paragraph {
     font-size: 0.9rem;
-    line-height: 1.65;
+    line-height: 1.6;
     text-align: center;
     padding: 0 15px;
   }
@@ -212,12 +212,12 @@
     padding-top: 20px;
   }  
   .about-img .about-img-wrapper img {
-    max-width: 300px;
+    max-width: 280px;
     padding-top: 30px;
   }
   .about-skills-title {
     font-size: 30px;
-    margin-top: 80px;
+    margin-top: 30px;
   }
 }
 
@@ -228,7 +228,7 @@
   }
   .about-description .about-paragraph {
     font-size: 0.80rem ;
-    line-height: 1.60;
+    line-height: 1.55;
     text-align: center;
   }
   .about-description .about-list{
@@ -236,7 +236,7 @@
     text-align: center;
   }
   .about-list .about-activity {
-    font-size: 13px;
+    font-size: 12px;
     padding: 10px 23px;
     text-align:left;
   }
@@ -251,7 +251,7 @@
   }  
   .about-img .about-img-wrapper img {
     padding-top: 30px;
-    max-width: 250px;
+    max-width: 220px;
   }
   .about-skills-title {
     font-size: 25px;

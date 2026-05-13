@@ -27,7 +27,7 @@
 .project-card {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-align: center;
 }
 .project-container .project-card-content {
@@ -204,23 +204,25 @@
     padding-bottom: 20px;
     margin-top: -30px;
   }
-  .project-card {
-    padding-inline: 10px;
+  .project-section .project-card {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-top: -20px;
   }
   .project-card-content img {
     height: 200px;
   }
   .project-card-content .card-title {
     font-size: 24px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   .project-card-content .card-description {
     font-size: 15px;
-    padding-top: 10px;
+    padding-top: 5px;
   }
-  .btn-card {
+  .project-container .btn-card {
     width: 80%;
-    margin: 8px 0 !important;
+    margin: 5px 0 !important;
     padding: 12px;
     font-size: 14px;
   }
@@ -241,7 +243,6 @@
   }
   .project-section p {
     font-size: 14px;
-    line-height: 1.8;
     padding-bottom: 25px;
     margin-top: -30px;
   }

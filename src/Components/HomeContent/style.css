@@ -99,7 +99,10 @@
     font-size: 35px;
   }
   .home-header .heading-name {
-    font-size: 40px;
+    font-size: 35px;
+  }
+  .home-header .main-name {
+    font-size: 35px;
   }
   .home-header .Typewriter__wrapper {
     font-size: 35px;

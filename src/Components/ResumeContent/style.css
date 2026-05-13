@@ -502,12 +502,15 @@
   .resume-wrapper .resume-title {
     font-size: 55px;
   }
+  .resume-wrapper .resume-subtitle {
+    padding: 0 10px;
+  }
   .resume-highlights{
     padding-top: 20px;
   }
   .resume-highlights .resume-card {
     width: 90%;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 30px 18px;
   }
   .resume-card-icon {
@@ -520,7 +523,8 @@
   }
   .resume-view-btn,
   .resume-download-btn {
-    width: 70%;
+    width: 75%;
+    font-size: 15px;
   }
   .resume-modal-content {
     width: 90%;
@@ -585,9 +589,9 @@
   }
   .resume-view-btn,
   .resume-download-btn {
-    width: 70%;
-    font-size: 16px;
-    padding: 14px 20px;
+    width: 75%;
+    font-size: 13px;
+    padding: 15px 20px;
   }
   .resume-modal-content {
     width: 90%;
