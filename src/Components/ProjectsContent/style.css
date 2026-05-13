@@ -207,7 +207,7 @@
   .project-section .project-card {
     padding-top: 0px;
     padding-bottom: 30px;
-    margin-top: -20px;
+    margin-top: -30px;
   }
   .project-card-content img {
     height: 200px;
@@ -280,21 +280,22 @@
   }
   .project-section p {
     font-size: 13px;
-    padding-bottom: 30px;
-    margin-top: -20px;
+    padding-top: 10px;
   }
   .project-card-content img {
-    height: 155px;
+    height: 150px;
   }
   .project-card-content .card-body {
     padding: 15px;
   }
   .project-card-content .card-title {
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 3px;
   }
   .project-card-content .card-description {
+    padding-top: 0;
     font-size: 12px;
+    line-height: 1.45;
   }
   .btn-card {
     font-size: 13px;

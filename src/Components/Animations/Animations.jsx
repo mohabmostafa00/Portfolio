@@ -10,7 +10,7 @@ function Animations() {
           if (entry.isIntersecting) {
             setTimeout(() => {
               entry.target.classList.add("active");
-            }, index * 150); // stagger احترافي
+            }, index * 150);
           }
         });
       },

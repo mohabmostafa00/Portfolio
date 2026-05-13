@@ -176,9 +176,15 @@
     font-size: 40px;
     margin-top: 80px;
   }  
-  .about-row{
+  .about-text {
+    order: 2;
+  }
+  .about-img {
+    order: 1;
+  }
+  .about-row {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
@@ -189,9 +195,15 @@
   .about-text .about-title {
     font-size: 35px;
   }
-  .about-row{
+  .about-text {
+    order: 2;
+  }
+  .about-img {
+    order: 1;
+  }
+  .about-row {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .about-description .about-paragraph {
     font-size: 0.9rem;
@@ -240,9 +252,15 @@
     padding: 10px 23px;
     text-align:left;
   }
-  .about-row{
+  .about-text {
+    order: 2;
+  }
+  .about-img {
+    order: 1;
+  }
+  .about-row {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .about-text .about-description .p-sky {
     font-size: 15px;
@@ -321,7 +339,7 @@
     transform: translateY(-12px);
   }
 
-   100% {
+  100% {
     transform: translateY(0px);
   }
 }

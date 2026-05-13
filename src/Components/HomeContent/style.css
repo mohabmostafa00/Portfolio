@@ -204,7 +204,7 @@
   }
   .home-header .type  {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     padding-top: 10px;
   }
   .home-header .Typewriter__wrapper {

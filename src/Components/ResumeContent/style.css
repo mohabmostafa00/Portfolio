@@ -272,17 +272,17 @@
 .resume-modal-content {
   position: relative;
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
   overflow: hidden;
-  height: 90vh;
+  height: 85vh;
   background: rgba(17,17,17,0.95);
   overflow-y: auto;
-  padding: 40px 20px;
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow:
     0 0 60px rgba(0,0,0,0.45);
   animation: scaleUp 0.35s ease;
   z-index: 1000000;
+  scrollbar-gutter: stable;
 }
 
 /* PDF */
@@ -290,8 +290,13 @@
 .resume-pdf-container {
   display: flex;
   justify-content: center;
-  align-items:center ;
+  align-items:center;
   overflow: auto;
+  padding: 40px;
+}
+.react-pdf__Page {
+  transform: scale(1.9);
+  transform-origin: top center;
 }
 
 /* =========================================================
@@ -300,10 +305,10 @@
 
 .resume-close-btn {
   position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 50px;
-  height: 50px;
+  top: 10px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   border: none;
   display: flex;
@@ -329,32 +334,30 @@
   box-shadow:
     0 0 30px rgba(0, 238, 255, 0.25);
 }
-.resume-modal-content::-webkit-scrollbar {
-  width: 8px;
+.resume-pdf-container::-webkit-scrollbar {
+  width: 10px;
 }
-.resume-modal-content::-webkit-scrollbar-track {
+.resume-pdf-container::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
+  margin-top:40px;
 }
-.resume-modal-content::-webkit-scrollbar-thumb {
+.resume-pdf-container::-webkit-scrollbar-thumb {
   background: linear-gradient(
     180deg,
     #00eeff,
     #6c63ff
   );
-
   border-radius: 10px;
+  transition: 0.3 ease;
 }
-.resume-modal-content::-webkit-scrollbar-thumb:hover {
-  background: #00eeffd7;
-}
+
 
 /* =========================================================
    Animations
 ========================================================= */
 
 @keyframes fadeIn {
-
   from {
     opacity: 0;
   }
@@ -362,11 +365,9 @@
   to {
     opacity: 1;
   }
-
 }
 
 @keyframes scaleUp {
-
   from {
     transform: scale(0.82);
     opacity: 0;
@@ -376,11 +377,9 @@
     transform: scale(1);
     opacity: 1;
   }
-
 }
 
 @keyframes pulseRing {
-
   0% {
     transform: scale(1);
     opacity: 1;
@@ -390,7 +389,6 @@
     transform: scale(1.35);
     opacity: 0;
   }
-
 }
 
 /* ======================= Responsive =======================*/
@@ -430,7 +428,7 @@
     padding-top: 10px;
   }
   .react-pdf__Page {
-    transform: scale(0.55);
+    transform: scale(1.2);
     transform-origin: top center;
   }
 }
@@ -493,7 +491,7 @@
     padding-top: 10px;
   }
   .react-pdf__Page {
-    transform: scale(0.55);
+    transform: scale(1.15);
     transform-origin: top center;
   }
 }
@@ -529,7 +527,7 @@
   .resume-modal-content {
     width: 90%;
     height: 80vh;
-    padding: 50px 8px 10px 8px;
+    padding: 50px 10px 10px 10px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -552,17 +550,23 @@
     padding-top: 10px;
   }
   .react-pdf__Page {
-    transform: scale(0.50);
+    transform: scale(1.1);
     transform-origin: top center;
   }
 }
 
 @media (max-width: 400px) {
+  .resume-wrapper .resume-section{
+    padding-top: 80px;
+  }
   .resume-header .resume-title {
     font-size: 50px;
   }
   .resume-header .resume-subtitle {
     font-size: 15px;
+  }
+  .resume-highlights{
+    padding-top: 0%;
   }
   .resume-highlights .resume-card {
     width: 90%;
@@ -619,7 +623,7 @@
     padding-top: 10px;
   }
   .react-pdf__Page {
-    transform: scale(0.43);
+    transform: scale(0.95);
     transform-origin: top center;
   }
 }
