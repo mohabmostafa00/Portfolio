@@ -295,7 +295,7 @@
   padding: 40px;
 }
 .react-pdf__Page {
-  transform: scale(1.9);
+  transform: scale(1);
   transform-origin: top center;
 }
 

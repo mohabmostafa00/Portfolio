@@ -1,3 +1,5 @@
+/* ======================= about-section ======================= */
+
 .about-section {
   position: relative;
   padding-top: 100px !important;
@@ -6,44 +8,68 @@
   overflow: hidden;
 }
 .about-title {
-  font-size: 2.5rem;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 20px;
   color: white;
 }
-.Sky-Blue {
+.about-row .Sky-Blue {
   background: linear-gradient(90deg, #00EEFF 40%, #6c63ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.about-paragraph {
-  font-size: 1rem ;
-  line-height: 1.9;
+.about-description .about-paragraph {
+  font-size: 17px;
+  line-height: 1.6;
 }
-.about-list {
-  padding: 0;
-  line-height: 1;
-}
-.about-activity {
-  list-style: none;
+.about-skills-tags {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
-  padding: 8px 0;
-  font-size: 1.05rem;
-  color: #ddd;
-  transition: 0.3s ease;
-  cursor: default;
-}
-.about-activity:hover {
-  transform: translateX(10px);
-}
-.about-activity:hover {
-  color: #00EEFF;
-}
-.about-quote {
   margin-top: 25px;
-  font-size: 1.1rem;
+}
+.skill-tag {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 238, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 0 transparent;
+  transition: all 0.25s ease;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+.skill-tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(0, 238, 255, 0.25),
+    transparent
+  );
+  transition: 0.5s;
+}
+.skill-tag:hover {
+  transform: translateY(-4px) scale(1.05);
+  border-color: #00eeff;
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.25);
+}
+.skill-tag:hover::before {
+  left: 100%;
+}
+.about-description .about-quote {
+  margin-top: 25px;
+  font-size: 17px !important;
+  font-weight: 600;
   font-style: italic;
   letter-spacing: 1px;
   text-align: left;
@@ -62,40 +88,37 @@
 .about-img-wrapper img:hover {
   transform: scale(1.05);
 }
-
 @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
 }
-
 .about-skills-title {
   text-align: center;
-  margin-top: 100px ;
+  margin-top: 120px ;
   font-size: 40px;
+  font-weight: 600;
   color: white;
 }
 .about-skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .about-skills .row {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.skills-icons {
+.row .skills-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px ;
+  margin-bottom: 25px ;
   transition: 0.3s ease;
-}
-.skills-icons img {
 }
 .skills-icons img,
 .skills-icons svg {
@@ -103,22 +126,23 @@
   height: 40px;
 }
 .skills-icons-text {
-  margin-top: 8px;
-  font-size: 16px;
+  padding-top: 12px;
+  font-size: 17px;
   font-weight: bold;
   color: #ddd;
   text-align: center;
 }
 
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 992px) {
   .about-section {
-    padding-top: 110px !important;
+    padding-top: 120px !important;
   }
   .about-description .about-paragraph {
-    font-size: 16px ;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.6;
   }
   .about-list {
     display: flex;
@@ -128,9 +152,12 @@
   .about-list .about-activity{
     padding: 4px;
   }
+  .about-skills-tags{
+    display: none;
+  }
   .about-text .about-description .p-sky{
-    margin-top: -15px;
-    font-size: 16px;
+    margin-top: 20px;
+    font-size: 18px !important;
     text-align: left;
     font-weight: bold;
     padding-bottom: 60px;
@@ -161,6 +188,17 @@
     font-size: 1.05rem;
     padding: 10px 25px;
     margin: 0 auto;
+  }
+  .about-skills-tags{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .skill-tag {
+    font-size: 17px;
   }
   .about-text .about-description .p-sky{
     font-size: 17px;
@@ -217,8 +255,14 @@
     margin: 0 auto;
     text-align: left;
   }
+  .about-skills-tags{
+    padding-top: 10px;
+  }
+  .skill-tag {
+    font-size: 15px;
+  }
   .about-text .about-description .p-sky{
-    font-size: 17px;
+    font-size: 16px !important;
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
@@ -262,8 +306,11 @@
     display: flex;
     flex-direction: column;
   }
+  .skill-tag {
+    font-size: 11px;
+  }
   .about-text .about-description .p-sky {
-    font-size: 15px;
+    font-size: 14px !important;
     font-weight: bold;
     text-align: center;
   }  
@@ -273,6 +320,7 @@
   }
   .about-skills-title {
     font-size: 25px;
+    padding-top: 30px;
   }
 }
 
@@ -301,21 +349,13 @@
   margin-top: 25px;
   letter-spacing: 1px;
 }
-.about-activity {
-  list-style: none;
-  text-align: left;
-  padding-left: 0;
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1.05rem;
-  transition: 0.3s ease;
-}
-.about-activity:hover {
-  transform: translateX(8px);
-  color: #00EEFF;
-}
+
+
+
+
+
+
+
 .about-img {
   display: flex;
   justify-content: center;
@@ -394,4 +434,6 @@
     margin: 10px ;
   }
 }
+
+
 

@@ -22,16 +22,18 @@ function ProjectsContent() {
               isBlog={false}
               title="E-commerce"
               description="Built a responsive e-commerce web application using React,HTML,CSS,and JavaScript"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              demoLink="https://project-one-theta-eight.vercel.app/"
+              ghLink="https://github.com/mohabmostafa00/E-commerce"
             />
           </Col>
-          <Col md={6} className="project-card reveal from-bottom">
+          <Col md={6} className="project-card reveal from-bottom ">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
               title="E-commerce"
               description="Built a responsive e-commerce web application using React,HTML,CSS,and JavaScript"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              demoLink="https://project-one-theta-eight.vercel.app/"
+              ghLink="https://github.com/mohabmostafa00/E-commerce"
             />
           </Col>
         </Row>

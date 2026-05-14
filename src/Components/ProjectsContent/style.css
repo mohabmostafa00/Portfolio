@@ -96,6 +96,11 @@
 .project-card-content .card-body {
   padding: 25px;
 }
+.project-buttons{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
 .btn-card {
   border: none;
   outline: none;
@@ -106,6 +111,7 @@
   color: white;
   transition: 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
 }
 .btn-card:hover {
   transform: scale(1.1);

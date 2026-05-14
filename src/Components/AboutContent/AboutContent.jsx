@@ -1,14 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle/Particle";
-import { ImPointRight } from "react-icons/im";
-import laptopImg from "../../assets/about/about-img.svg";
+import AboutImg from "../../assets/about/about-img.svg";
 import Skills from "./Skills";
-import "./style.css";
 import Animations from "../Animations/Animations";
+import "./style.css";
 
 function AboutContent() {
   Animations();
-
   return (
     <>
       <Particle />
@@ -21,49 +19,43 @@ function AboutContent() {
               </h1>
               <div className="about-description">
                 <p className="about-paragraph">
-                  Hi everyone! I’m{" "}
-                  <span className="Sky-Blue">Mohab Mostafa</span>, a Software
-                  Engineer passionate about building fast, scalable, and modern
-                  web applications.
+                  Hello, I’m <span className="Sky-Blue">Mohab Mostafa</span>, a
+                  Front-End Developer specializing in building fast, responsive,
+                  and scalable web interfaces using modern technologies.
                   <br />
                   <br />
-                  I enjoy turning ideas into real products using clean code and
-                  efficient architecture. My focus is on creating seamless user
-                  experiences and powerful backend systems that actually solve
-                  real problems.
+                  I focus on crafting clean, reusable components and delivering
+                  smooth user experiences with strong attention to performance,
+                  accessibility, and UI details.
                   <br />
                   <br />
-                  I’m currently sharpening my skills in full-stack development
-                  with a strong interest in{" "}
-                  <span className="Sky-Blue">React</span>,{" "}
-                  <span className="Sky-Blue">Node.js</span>, and system design.
+                  I enjoy turning UI designs into fully functional, interactive
+                  web applications using React and modern JavaScript, with a
+                  constant focus on writing maintainable and efficient code.
+                  <br />
+                  <br />
+                  I’m continuously improving my skills through real projects,
+                  problem-solving, and exploring modern front-end practices and
+                  tools.
                 </p>
-                <ul className="about-list">
-                  <li className="about-activity reveal from-left">
-                    <ImPointRight /> Exploring new technologies ⚡
-                  </li>
-                  <li className="about-activity reveal from-left">
-                    <ImPointRight /> Building side projects 💡
-                  </li>
-                  <li className="about-activity reveal from-left">
-                    <ImPointRight /> Learning system design 🧠
-                  </li>
-                  <li className="about-activity reveal from-left">
-                    <ImPointRight /> Gaming & creativity 🎮
-                  </li>
-                </ul>
-                <p className="p-sky reveal from-left about-quote">
-                  "Build with purpose. Improve with every line of code."
+                <div className="about-skills-tags reveal from-bottom">
+                  <span className="skill-tag">🎨 UI/UX Implementation</span>
+                  <span className="skill-tag">🚀 Performance Optimization</span>
+                  <span className="skill-tag">📱 Responsive Design</span>
+                </div>
+                <p className="p-sky reveal from-bottom about-quote">
+                  "I build interfaces that feel fast, look clean, and work
+                  everywhere."
                 </p>
               </div>
             </Col>
             <Col md={5} className="about-img reveal from-right">
               <div className="about-img-wrapper">
-                <img src={laptopImg} alt="about" />
+                <img src={AboutImg} alt="about" />
               </div>
             </Col>
           </Row>
-          <h1 className="project-heading about-skills-title reveal from-bottom">
+          <h1 className="about-skills-title reveal from-bottom">
             Professional Skills
           </h1>
           <div className="about-skills reveal from-bottom">
