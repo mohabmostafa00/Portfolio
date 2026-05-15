@@ -13,6 +13,11 @@ function AboutContent() {
       <Container fluid className="about-section">
         <Container>
           <Row className="about-row">
+            <Col md={5} className="about-img reveal from-right">
+              <div className="about-img-wrapper">
+                <img src={AboutImg} alt="about" />
+              </div>
+            </Col>
             <Col md={7} className="about-text reveal from-left">
               <h1 className="about-title">
                 Know Who <strong className="Sky-Blue">I'M</strong>
@@ -38,20 +43,21 @@ function AboutContent() {
                   problem-solving, and exploring modern front-end practices and
                   tools.
                 </p>
-                <div className="about-skills-tags reveal from-bottom">
-                  <span className="skill-tag">🎨 UI/UX Implementation</span>
-                  <span className="skill-tag">🚀 Performance Optimization</span>
-                  <span className="skill-tag">📱 Responsive Design</span>
+                <div className="about-experience reveal from-bottom">
+                  <span className="experience-tag reveal ">
+                    🎨 UI/UX Implementation
+                  </span>
+                  <span className="experience-tag reveal ">
+                    🚀 Performance Optimization
+                  </span>
+                  <span className="experience-tag reveal ">
+                    📱 Responsive Design
+                  </span>
                 </div>
-                <p className="p-sky reveal from-bottom about-quote">
+                <p className="about-quote reveal from-bottom ">
                   "I build interfaces that feel fast, look clean, and work
                   everywhere."
                 </p>
-              </div>
-            </Col>
-            <Col md={5} className="about-img reveal from-right">
-              <div className="about-img-wrapper">
-                <img src={AboutImg} alt="about" />
               </div>
             </Col>
           </Row>

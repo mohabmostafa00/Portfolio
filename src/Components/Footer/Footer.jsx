@@ -1,10 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { FaLinkedinIn, FaFacebook } from "react-icons/fa";
 import "./style.css";
 
 function Footer() {
@@ -32,11 +28,11 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
+                href="https://www.facebook.com/share/18Uc7xzP4A/?mibextid=wwXIfr"
                 rel="noreferrer"
                 target="_blank"
               >
-                <AiOutlineTwitter className="icon" />
+                <FaFacebook className="icon" />
               </a>
             </li>
             <li className="social-icons">
@@ -50,7 +46,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/soumyajit4419"
+                href="https://www.instagram.com/mohab.mostafaa"
                 rel="noreferrer"
                 target="_blank"
               >

@@ -4,10 +4,9 @@ import Particle from "../Particle/Particle";
 import Type from "./Type";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn , FaFacebookF} from "react-icons/fa";
 import myImg from "../../assets/home/Avatar.svg";
 import Tilt from "react-parallax-tilt";
 import "./style.css";
@@ -21,7 +20,10 @@ function HomeContent() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading reveal from-left">
+              <h1
+                style={{ paddingBottom: 15 }}
+                className="heading reveal from-left"
+              >
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
@@ -50,47 +52,34 @@ function HomeContent() {
         <Container>
           <Row>
             <Col md={8} className="home-about-description">
-              <h1  className="home-about-title reveal from-bottom">
-                LET ME INTRODUCE<span className="Sky-Blue"> MYSELF </span>
+              <h1 className="home-about-title reveal from-bottom">
+                LET ME INTRODUCE <span className="Sky-Blue"> MYSELF </span>
               </h1>
               <p className="home-about-body reveal from-left">
-                I’m a Software Engineer who loves transforming ideas into
-                reliable, scalable products. Over time, I’ve explored several
-                technologies and found my passion in building high-performance
-                systems and intuitive user experiences.
+                I’m a passionate <b className="Sky-Blue">Front-End Developer</b>{" "}
+                who builds modern, interactive, and visually engaging web
+                experiences. I focus on turning ideas into smooth, responsive,
+                and high-performance interfaces.
                 <br />
                 <br />
-                I’m proficient in
-                <i>
-                  <b className="Sky-Blue">
-                    {" "}
-                    JavaScript, C++, Rust, Node.js, and Java{" "}
-                  </b>
-                </i>
-                — and I enjoy working across both backend and frontend stacks.
+                My goal is not only to build websites — but to create
+                experiences that feel dynamic, professional, and memorable.
                 <br />
+                <br />I specialize in <b className="Sky-Blue">React.js</b> and
+                modern frontend development, with a strong eye for UI details,
+                animations, and user experience.
                 <br />
-                My key areas of interest include developing
-                <i>
-                  <b className="Sky-Blue">
-                    {" "}
-                    Web Applications, Blockchain Solutions,{" "}
-                  </b>
-                </i>
-                and exploring new ways to bridge on-chain and off-chain systems.
-                <br />
-                <br />
-                Whenever possible, I love building projects with
-                <b className="Sky-Blue"> Node.js </b> and modern frameworks like{" "}
-                <i>
-                  <b className="Sky-Blue">React.js</b> and{" "}
-                  <b className="Sky-Blue">Next.js</b>.
-                </i>
+                <br />I love building clean, fast, and creative web applications
+                that feel alive and stand out.
               </p>
             </Col>
             <Col md={4} className="myAvatar">
               <Tilt>
-                <img src={myImg} className="img-fluid reveal from-right" alt="avatar" />
+                <img
+                  src={myImg}
+                  className="img-fluid reveal from-right"
+                  alt="avatar"
+                />
               </Tilt>
             </Col>
           </Row>
@@ -116,12 +105,12 @@ function HomeContent() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://www.facebook.com/share/18Uc7xzP4A/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-color  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <FaFacebookF />
                 </a>
               </li>
               <li className="social-icons">

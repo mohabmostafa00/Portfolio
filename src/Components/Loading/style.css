@@ -13,8 +13,6 @@
   #000000
 );
 }
-
-/* ===== Name ===== */
 .loading-title {
   font-size: 2.8rem;
   font-weight: bold;
@@ -25,9 +23,7 @@
   background: linear-gradient(90deg, #00EEFF 50%, #6c63ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* box-shadow:
-    0 0 10px #6b63ffae,
-    0 0 15px #00eeff93; */
+
 }
 
 @keyframes glow {
@@ -40,8 +36,6 @@
     transform: scale(1.02);
   }
 }
-
-/* ===== Loading Bar ===== */
 .loading-bar {
   width: 200px;
   height: 4px;
@@ -51,7 +45,6 @@
   position: relative;
   margin-bottom: 15px;
 }
-
 .loading-bar::after {
   content: "";
   position: absolute;
@@ -84,18 +77,6 @@
 
 
 
-
-
-
-/* ######################################### */
-
-
-
-
-/* =========================
-   BASE (Desktop)
-========================= */
-
 .loading-screen {
   position: fixed;
   inset: 0;
@@ -118,9 +99,6 @@
   text-align: center;
 }
 
-/* =========================
-   TITLE
-========================= */
 
 .loading-title {
   font-size: 2.8rem;
@@ -138,9 +116,6 @@
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-/* =========================
-   BAR
-========================= */
 
 .loading-bar {
   width: 220px;
@@ -172,10 +147,6 @@
   animation: slide 1.2s infinite;
 }
 
-/* =========================
-   SUB TEXT
-========================= */
-
 .loading-sub {
   font-size: 0.95rem;
 
@@ -190,10 +161,6 @@
 
   animation: fade 1.2s infinite alternate;
 }
-
-/* =========================
-   ANIMATIONS
-========================= */
 
 @keyframes glow {
   from {
@@ -217,9 +184,6 @@
   to { opacity: 1; }
 }
 
-/* =========================================================
-   📱 992px (Tablet / Laptop small)
-========================================================= */
 
 @media (max-width: 992px) {
 
@@ -233,9 +197,6 @@
 
 }
 
-/* =========================================================
-   📱 768px (Tablet)
-========================================================= */
 
 @media (max-width: 768px) {
 
@@ -254,10 +215,6 @@
 
 }
 
-/* =========================================================
-   📱 576px (Large Mobile)
-========================================================= */
-
 @media (max-width: 576px) {
 
   .loading-title {
@@ -274,10 +231,6 @@
   }
 
 }
-
-/* =========================================================
-   📱 400px (Small Mobile)
-========================================================= */
 
 @media (max-width: 400px) {
 

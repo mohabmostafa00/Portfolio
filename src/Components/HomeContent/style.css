@@ -11,7 +11,7 @@
   padding: 9rem 0 2rem ;
 }
 .home-header {
-  padding-top: 80px ;
+  padding-top: 100px ;
   color: white;
 }
 .home-header .heading {
@@ -89,7 +89,7 @@
 
 @media (max-width: 992px) {
   .home-section .home-content {
-    padding: 12rem 0 3rem;
+    padding:12rem 0 3rem;
     text-align: left;
   }
   .home-content .home-header {
@@ -106,7 +106,7 @@
   }
   .home-header .Typewriter__wrapper {
     font-size: 35px;
-    line-height: 2.5;
+    line-height: 2;
   }
   .home-content .img-home{
     width: 100%;
@@ -237,6 +237,7 @@
   padding-top: 100px ;
   padding-bottom: 20px ;
   text-align: center;
+  line-height: 1.75;
 }
 .home-about-description .home-about-title{
   font-weight: bold;
@@ -250,27 +251,49 @@
 }
 .myAvatar {
   justify-content: right;
-  padding-top: 12em;
+  padding-top: 14em;
 }
 .myAvatar img {
-  padding-left: 6em;
+  width: 100%;
+  padding-left: 6.5em;
 }
 
 /* ============ Responsive ============ */
 
-@media (max-width: 992px) {
-  .home-about-section {
+@media (max-width: 1200px) {
+  .home-section .home-about-section {
     padding-top: 60px ;
     padding-bottom: 60px;
     text-align: left;
   }
   .home-about-body {
     font-size: 17px;
-    line-height: 1.7;
+    line-height: 1.75;
     padding-top: 25px;
   }
   .myAvatar {
-    padding-top: 6.5rem;
+    padding-top: 7rem;
+    display: flex;
+    justify-content: right;
+  }
+  .myAvatar img {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .home-section .home-about-section {
+    padding-top: 60px ;
+    padding-bottom: 60px;
+    text-align: left;
+  }
+  .home-about-body {
+    font-size: 17px;
+    line-height: 1.75;
+    padding-top: 25px;
+  }
+  .myAvatar {
+    padding-top: 9rem;
     display: flex;
     justify-content: center;
   }
@@ -282,13 +305,13 @@
 
 @media (max-width: 768px) {
   .home-about-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 140px;
   }
   .home-about-description {
     padding-top: 30px;
     padding-bottom: 10px;
-  }.home-about-description .home-about-title {
+  }
+  .home-about-description .home-about-title {
     padding-bottom: 40px;
   }
   .home-about-body {
@@ -308,7 +331,7 @@
 
 @media (max-width: 576px) {
   .home-about-section {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 40px;
   }
   .home-about-description {
@@ -368,8 +391,8 @@
   width: 45px ;
   height: 45px ;
   text-align: center ;
-  font-size: 1.2em ;
-  line-height: 2.3em ;
+  font-size: 1.3em ;
+  line-height: 2.0em ;
   background: rgba(255, 255, 255, 0.972) ;
   border-radius: 50% ;
   transition: 0.03s ease;

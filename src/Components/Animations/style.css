@@ -3,15 +3,12 @@
   transition: all 0.9s ease;
   will-change: transform, opacity;
 }
-
 .from-left {
   transform: translateX(-100px);
 }
-
 .from-right {
   transform: translateX(100px);
 }
-
 .from-bottom {
   transform: translateY(100px);
 }
