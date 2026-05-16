@@ -1,251 +1,170 @@
 .loading-screen {
   position: fixed;
   inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  background: linear-gradient(
-  to bottom right,
-  #050816,
-  #0b1026,
-  #000000
-);
-}
-.loading-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #00eeff;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-  animation: glow 1.5s ease-in-out infinite alternate;
-  background: linear-gradient(90deg, #00EEFF 50%, #6c63ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #00eeff;
-    transform: scale(0.98);
-  }
-  to {
-    text-shadow: 0 0 20px #00eeff, 0 0 40px #6c63ff;
-    transform: scale(1.02);
-  }
-}
-.loading-bar {
-  width: 200px;
-  height: 4px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 15px;
-}
-.loading-bar::after {
-  content: "";
-  position: absolute;
-  width: 40%;
-  height: 100%;
-  background: linear-gradient(90deg, #00eeff, #6c63ff);
-  animation: slide 1.2s infinite;
-}
-
-@keyframes slide {
-  0% { left: -40%; }
-  100% { left: 100%; }
-}
-
-.loading-sub {
-  color: rgba(255,255,255,0.6);
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  animation: fade 1.2s infinite alternate;
-  background: linear-gradient(90deg, #00EEFF 50%, #6c63ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes fade {
-  from { opacity: 0.3; }
-  to { opacity: 1; }
-}
-
-
-
-
-.loading-screen {
-  position: fixed;
-  inset: 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 9999;
-
   background: linear-gradient(
     to bottom right,
     #050816,
     #0b1026,
     #000000
   );
-
-  padding: 20px;
-  text-align: center;
-}
-
-
-.loading-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-
-  letter-spacing: 2px;
-
-  margin-bottom: 15px;
-
-  background: linear-gradient(90deg, #00EEFF 50%, #6c63ff);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: glow 1.5s ease-in-out infinite alternate;
-}
-
-
-.loading-bar {
-  width: 220px;
-  max-width: 80%;
-
-  height: 4px;
-
-  background: rgba(255,255,255,0.1);
-
-  border-radius: 10px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-
-  position: relative;
-
-  margin-bottom: 15px;
+  z-index: 999999;
+  backdrop-filter: blur(10px);
 }
-
-.loading-bar::after {
+.loading-screen::before {
   content: "";
-
   position: absolute;
-
-  width: 40%;
-  height: 100%;
-
-  background: linear-gradient(90deg, #00eeff, #6c63ff);
-
-  animation: slide 1.2s infinite;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(29, 78, 216, 0.08) 0%,
+    rgba(29, 78, 216, 0.18) 40%,
+    transparent 70%
+  );
+  animation: bgPulse 6s ease-in-out infinite;
+}
+.background-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #1d4ed8;
+  filter: blur(120px);
+  opacity: 0.2;
+  animation: glowFloat 5s ease-in-out infinite;
+}
+.loading-logo {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  z-index: 2;
+  animation: logoFloat 3.5s ease-in-out infinite;
+}
+.loading-logo span {
+  color: #00eeff;
+  animation: dotPulse 2s ease-in-out infinite;
+}
+.loading-text {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  z-index: 2;
+  animation: textFade 2s ease forwards;
 }
 
-.loading-sub {
-  font-size: 0.95rem;
+/* =================== Animation ===================*/
 
-  color: rgba(255,255,255,0.6);
-
-  letter-spacing: 1px;
-
-  background: linear-gradient(90deg, #00EEFF 50%, #6c63ff);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: fade 1.2s infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #00eeff;
-    transform: scale(0.98);
+@keyframes bgPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
   }
-
-  to {
-    text-shadow: 0 0 20px #00eeff, 0 0 40px #6c63ff;
-    transform: scale(1.02);
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+@keyframes glowFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.18;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+    opacity: 0.3;
+  }
+}
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes dotPulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes textFade {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
   }
 }
 
-@keyframes slide {
-  0% { left: -40%; }
-  100% { left: 100%; }
-}
-
-@keyframes fade {
-  from { opacity: 0.3; }
-  to { opacity: 1; }
-}
+/* =================== responsive ===================*/
 
 
 @media (max-width: 992px) {
-
-  .loading-title {
-    font-size: 2.4rem;
+  .loading-logo {
+    font-size: 72px;
   }
-
-  .loading-bar {
-    width: 200px;
-  }
-
-}
-
-
-@media (max-width: 768px) {
-
-  .loading-title {
-    font-size: 2rem;
+  .loading-text {
+    font-size: 16px;
     letter-spacing: 1.5px;
   }
-
-  .loading-bar {
-    width: 180px;
+  .background-glow {
+    width: 420px;
+    height: 420px;
+    opacity: 0.2;
   }
-
-  .loading-sub {
-    font-size: 0.85rem;
-  }
-
 }
-
-@media (max-width: 576px) {
-
-  .loading-title {
-    font-size: 1.7rem;
+@media (max-width: 768px) {
+  .loading-logo {
+    font-size: 60px;
   }
-
-  .loading-bar {
-    width: 160px;
-    height: 3px;
-  }
-
-  .loading-sub {
-    font-size: 0.8rem;
-  }
-
-}
-
-@media (max-width: 400px) {
-
-  .loading-title {
-    font-size: 1.4rem;
+  .loading-text {
+    font-size: 15px;
     letter-spacing: 1px;
   }
-
-  .loading-bar {
-    width: 140px;
-    height: 3px;
+  .background-glow {
+    width: 340px;
+    height: 340px;
+    opacity: 0.18;
   }
-
-  .loading-sub {
-    font-size: 0.75rem;
+}
+@media (max-width: 576px) {
+  .loading-logo {
+    font-size: 48px;
   }
-
+  .loading-text {
+    font-size: 14px;
+    padding-inline: 25px;
+  }
+  .background-glow {
+    width: 260px;
+    height: 260px;
+    opacity: 0.16;
+  }
+}
+@media (max-width: 400px) {
+  .loading-logo {
+    font-size: 40px;
+  }
+  .loading-text {
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    padding-inline: 20px;
+  }
+  .background-glow {
+    width: 220px;
+    height: 220px;
+    opacity: 0.15;
+  }
 }
