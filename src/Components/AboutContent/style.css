@@ -18,6 +18,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+h1 .Sky-Blue {
+  background: linear-gradient(90deg, #00EEFF 40%, #6c63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .about-description .about-paragraph {
   font-size: 17px;
   line-height: 1.6;
@@ -288,15 +293,15 @@
   text-align: center;
   align-items: center;
   font-size: 16px;
-  margin: 15px;
+  margin: 25px;
   padding: 15px 40px;
   opacity: 0.93;
   outline: 1.7px solid  var(--text-color);
   vertical-align: middle;
   border-radius: 25px;
   box-shadow:
-    0 0 10px #6b63ff77,
-    0 0 15px #00EEFF77;  overflow: hidden;
+    0 0 10px #6b63ff44,
+    0 0 15px #00EEFF44;  overflow: hidden;
   transition: all 0.4s ease 0s;
   width: fit-content;
   cursor: pointer;
@@ -325,9 +330,7 @@
   color: #ddd;
 }
 
-
 /* ================= RESPONSIVE ================= */
-
 
 @media (max-width: 992px) {
   .about-skills{
@@ -335,20 +338,38 @@
   }
 }
 
-@media (max-width: 576px) {
-.about-skills-title{
-  font-size: 30px;
+@media (max-width: 768px) {
+  .about-skills {
+    padding-top: 60px;
+  }
+    .skills-icons {
+    padding: 15px 35px;
+  }
 }
+
+@media (max-width: 576px) {
+  .about-skills-title{
+    font-size: 30px;
+  }
+  .about-skills {
+    padding-top: 60px;
+  }
+  .skills-icons {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 400px) {
-.about-skills-title{
-  font-size: 25px;
-}
-.about-skills {
-  padding-top: 60px;
-}
-.skills-icons {
-  padding: 15px;
-}
+  .about-skills-title{
+    font-size: 25px;
+  }
+  .about-skills {
+    padding-top: 60px;
+  }
+  .skills-icons {
+    padding: 10px;
+  }
+  .skills-icons .icon{
+    padding: 5px;
+  }
 }

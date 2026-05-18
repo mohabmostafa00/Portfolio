@@ -10,17 +10,16 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();import "./style.css";
+  import.meta.url,
+).toString();
+import "./style.css";
 import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import Animations from "../Animations/Animations";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
-
   const [showCV, setShowCV] = useState(false);
-
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
@@ -28,9 +27,8 @@ function ResumeNew() {
   return (
     <section className="resume-wrapper">
       <Particle />
-      <Animations/>
+      <Animations />
       <Container fluid className="resume-section">
-
         <div className="resume-header">
           <h1 className="resume-title reveal from-left">Resume</h1>
 
@@ -72,11 +70,8 @@ function ResumeNew() {
               <div className="resume-card-icon">
                 <FaProjectDiagram />
               </div>
-
               <h2 className="resume-card-number">5+</h2>
-
               <h3 className="resume-card-title">Projects</h3>
-
               <p className="resume-card-desc">
                 Real projects with modern UI and animations.
               </p>
@@ -90,9 +85,7 @@ function ResumeNew() {
               </div>
 
               <h2 className="resume-card-number">HTML</h2>
-
               <h3 className="resume-card-title">CSS • JS</h3>
-
               <p className="resume-card-desc">
                 Strong foundation in front-end technologies.
               </p>
@@ -129,12 +122,9 @@ function ResumeNew() {
               </button>
 
               <div className="resume-pdf-container">
-                <Document 
-                  file={pdf}
-                  loading="Loading CV..."  
-                >
-                  <Page 
-                    pageNumber={1} 
+                <Document file={pdf} loading="Loading CV...">
+                  <Page
+                    pageNumber={1}
                     scale={width > 786 ? 1.2 : 0.55}
                     renderTextLayer={false}
                     renderAnnotationLayer={false}

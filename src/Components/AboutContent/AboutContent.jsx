@@ -62,7 +62,7 @@ function AboutContent() {
             </Col>
           </Row>
           <h1 className="about-skills-title reveal from-bottom">
-            Professional Skills
+            Professional <span className="Sky-Blue">Skills</span>
           </h1>
           <div className="about-skills reveal from-bottom">
             <Skills />
