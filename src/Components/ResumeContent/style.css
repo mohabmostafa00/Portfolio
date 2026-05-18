@@ -19,7 +19,7 @@
   font-size: 65px;
   font-weight: bold;
   margin-bottom: 10px;
-  background: linear-gradient(90deg, #00EEFF 40%, #6c63ff , #6c63ff);
+  background: linear-gradient(90deg, #00EEFF 40%, #6c63ff 60%, #6c63ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -266,17 +266,14 @@
   animation: fadeIn 0.35s ease;
   padding-top: 65px;
 }
-
-/* Modal Content */
-
 .resume-modal-content {
-  position: relative;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
   width: 90%;
   max-width: 900px;
-  overflow: hidden;
   height: 85vh;
   background: rgba(17,17,17,0.95);
-  overflow-y: auto;
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow:
     0 0 60px rgba(0,0,0,0.45);
@@ -284,19 +281,19 @@
   z-index: 1000000;
   scrollbar-gutter: stable;
 }
-
-/* PDF */
-
 .resume-pdf-container {
   display: flex;
+  flex: 1;
   justify-content: center;
-  align-items:center;
+  align-items:flex-start;
   overflow: auto;
   padding: 40px;
+  min-height: 0;
 }
 .react-pdf__Page {
-  transform: scale(1);
+  transform: scale(1.05) !important;
   transform-origin: top center;
+  margin-top: 20px;
 }
 
 /* =========================================================
@@ -557,7 +554,7 @@
 
 @media (max-width: 400px) {
   .resume-wrapper .resume-section{
-    padding-top: 80px;
+    padding-top: 90px;
   }
   .resume-header .resume-title {
     font-size: 50px;
@@ -570,7 +567,7 @@
   }
   .resume-highlights .resume-card {
     width: 90%;
-    padding: 25px 15px;
+    padding: 20px 15px;
     margin: 0 auto;
   }
   .resume-card .resume-card-icon {
@@ -599,12 +596,13 @@
   }
   .resume-modal-content {
     width: 90%;
-    height: 70vh;
-    padding: 50px 8px 10px 8px;
+    height: 75vh;
+    padding: 40px 8px 10px 8px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-top: -20px;
   }
   .resume-close-btn {
     width: 36px;
@@ -620,7 +618,7 @@
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
-    padding-top: 10px;
+    padding-top: 0px;
   }
   .react-pdf__Page {
     transform: scale(0.95);

@@ -2,7 +2,7 @@ function Logo() {
   return (
     <svg
       aria-hidden="true"
-      className="_monogram_1mxlb_2"
+      className="logo-svg"
       width="48"
       height="29"
       viewBox="0 0 48 29"

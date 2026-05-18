@@ -275,12 +275,12 @@
   justify-content: center;
   align-items: center;
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 .about-skills .row {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 .skills-icons {
   display: flex;
@@ -289,7 +289,7 @@
   align-items: center;
   font-size: 16px;
   margin: 15px;
-  padding: 10px 20px;
+  padding: 15px 40px;
   opacity: 0.93;
   outline: 1.7px solid  var(--text-color);
   vertical-align: middle;
@@ -344,5 +344,11 @@
 @media (max-width: 400px) {
 .about-skills-title{
   font-size: 25px;
+}
+.about-skills {
+  padding-top: 60px;
+}
+.skills-icons {
+  padding: 15px;
 }
 }

@@ -2,21 +2,15 @@ import { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-// import logo from "../../assets/Logoo.png";
 import Logo from "./logo";
-
 import { Link } from "react-router-dom";
-import {
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+import {AiOutlineHome,AiOutlineFundProjectionScreen,AiOutlineUser,} from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import "./styles.css";
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
-
+  const [navColor, updateNavbar] = useState(false);
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -24,7 +18,6 @@ function NavBar() {
       updateNavbar(false);
     }
   }
-
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -32,11 +25,11 @@ function NavBar() {
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className={navColor ? "sticky" : "navbar"}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex Nav-logo">
-            <Logo />
+          <Logo/>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

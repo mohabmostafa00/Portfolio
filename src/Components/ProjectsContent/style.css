@@ -9,11 +9,12 @@
 .project-heading {
   text-align: center;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: bold;
   color: white;
   margin-bottom: 10px;
 }
 .project-heading .Sky-Blue {
+  font-weight: bold;
   background: linear-gradient(90deg, #00EEFF 50%, #6c63ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -70,7 +71,7 @@
   z-index: -1;
 }
 .project-card-content img {
-  height: 220px;
+  height: 210px;
   object-fit: cover;
   border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: 0.4s;
@@ -79,7 +80,6 @@
 .project-card-content:hover img {
   transform: scale(1.05);
 }
-
 .project-card-content .card-title {
   color: white;
   font-size: 1.7rem;
@@ -91,7 +91,6 @@
   line-height: 2;
   padding-bottom: 0;
   font-size: 17px;
-  font-weight: bold;
 }
 .project-card-content .card-body {
   padding: 25px;
@@ -143,7 +142,7 @@
     width: 90%;
   }
   .project-card-content img {
-    height: 210px;
+    height: 200px;
   }
   .project-card-content .card-description {
     font-size: 16px;
@@ -163,18 +162,15 @@
     font-size: 40px;
   }
   .project-card-content{
-    width: 100% ;
+    width: 100%;
     margin: 0 auto;
-  }
-  .project-card{
-    padding-top: 20px;
   }
   .project-section p {
     font-size: 17px;
-    margin-top: -30px;
+    margin-top: 10px;
   }
   .project-card-content img {
-    height: 220px;
+    height: 180px;
   }
   .project-card-content .card-title {
     font-size: 26px;
@@ -194,12 +190,12 @@
 
 @media (max-width: 768px) {
   .project-section {
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 80px;
   }
   .project-heading {
-    font-size: 34px;
-    margin-bottom: 0;
+    font-size: 35px;
+    margin-bottom: 20px;
   }
   .project-card-content{
     width: 90%;
@@ -208,12 +204,11 @@
   .project-section p {
     font-size: 15px;
     padding-bottom: 20px;
-    margin-top: -30px;
   }
   .project-section .project-card {
     padding-top: 0px;
     padding-bottom: 30px;
-    margin-top: -30px;
+    margin-top: -10px;
   }
   .project-card-content img {
     height: 200px;
@@ -239,18 +234,17 @@
 
 @media (max-width: 576px) {
   .project-section {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 70px;
   }
   .project-heading {
     padding-top: 20px;
-    margin-bottom: 0;
-    font-size: 32px;
+    margin-bottom: 20px;
+    font-size: 35px;
   }
   .project-section p {
     font-size: 14px;
     padding-bottom: 25px;
-    margin-top: -30px;
   }
   .project-card-content{
     width: 90%;
@@ -278,14 +272,14 @@
   .project-heading {
     padding-top: 25px;
     margin-bottom: 0;
-    font-size: 26px;
+    font-size: 28px;
   }
   .project-card-content{
     width: 90%;
     margin: 0 auto;
   }
   .project-section p {
-    font-size: 13px;
+    font-size: 11px;
     padding-top: 10px;
   }
   .project-card-content img {

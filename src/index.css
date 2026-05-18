@@ -4,38 +4,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(
-  to bottom right,
-  #050816,
-  #0b1026,
-  #000000
-);
-
-/* background: radial-gradient(
-  circle at top left,
-  #111827 0%,
-  #050816 40%,
-  #000000 100%
-); */
+    to bottom right,
+    #050816,
+    #0b1026,
+    #000000
+  );
 }
 :root{
-
-  /* اللون الأساسي للخلفية */
   --bg-color: #050816;
-  /* خلفية ثانوية للسيكشنات أو الكروت */
   --bg-second: #0b1026;
-  /* اللون الأساسي للمشروع
-     استخدمه:
-     - hover
-     - buttons
-     - icons
-     - links
-     - glow
-  */
   --main-color: #00EEFF;
-  /* لون مساعد للتدرجات والهوفرات */
   --secondary-color: #7c3aed;
-  /* لون العناوين */
-  --white-color: #00EEFF;
-  /* لون الكلام العادي */
   --text-color: #bfc9d9;
 }
